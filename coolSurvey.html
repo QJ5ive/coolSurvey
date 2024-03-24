@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coolSurvey.css">
+    <title>Rate My Cool</title>
+</head>
+<body>
+    <h1 id="title">Rate My Cool</h1>
+    <p id="description">This survey is used to rate how cool I am.</p>
+    <form action="" id="survey-form">
+        <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name" id="name-label">Enter Your Name: <input type="text" id="name" required name="name" placeholder="Insert Name"></label>
+        <label for="email" id="email-label">Enter Your Email: <input type="email" id="email" required name="name" placeholder="Insert Email"></label>
+        <label for="number" id="number-label">Enter Phone Number: <input type="tel" id="number" name="number" pattern="[0-9]{7,11}" placeholder="Phone Number"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Who Am I?</legend>
+            <select name="whoAmI" id="dropdown">
+                <option value="">(Select One)</option>
+                <option value="whoAmI1">I am a supporter</option>
+                <option value="whoAmI2">I am a hater</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Am I Cool?</legend>
+            <label for="yes"><input type="radio" id="yes" name="status" value="yes" checked> Yes</label>
+            <label for="no"><input type="radio" id="no" name="status" value="no"> No, You're SuperCool!</label>
+        </fieldset>
+        <fieldset>
+            <legend>How Cool Am I? (Check All That Apply)</legend>
+            <label for="cool"><input type="checkbox" id="cool" value="cool" checked> Cool</label>
+            <label for="tooCool"><input type="checkbox" id="tooCool" value="tooCool" checked> Too Cool</label>
+            <label for="coolBreeze"><input type="checkbox" id="coolBreeze" value="coolBreeze" checked> Cool Breeze</label>
+            <label for="superCool"><input type="checkbox" id="superCool" value="superCool" checked> Super Cool</label>
+            <label for="iceCool"><input type="checkbox" id="iceCool" value="iceCool" checked> Ice Cold Cool</label>
+        </fieldset>
+        <textarea name="comment" id="comment" cols="30" rows="3" placeholder="Additional Comments"></textarea>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+<script src=""></script>
+</html>
